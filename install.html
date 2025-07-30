@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QBVReader</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <!-- Custom CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html"><b>QBV</b>Reader</a>
@@ -27,7 +29,7 @@
                         <a class="nav-link" href="index.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="install.html">Install</a>
+                        <a class="nav-link active" href="install.html">Install</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="changelog.html">Changelog</a>
@@ -36,7 +38,7 @@
                         <a class="nav-link" href="privacyPolicy.html">Privacy Policy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="termsOfService.html">Terms of Service</a>
+                        <a class="nav-link" href="termsOfService.html">Terms of Service</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://forms.gle/pro5Zvx4UDqc92Jd9" target="_blank">
@@ -48,36 +50,36 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="content container mt-5">
-        <h2 class="text-center mb-4">Terms of Service</h2>
-        <p>
-            As you use this app, please be aware of the following terms of service.
+    <!-- Installation Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Installation</h2>
+
+        <p class="text-center">
+            To install QBVReader, the steps below. If you want to try the app first, try out the web version <a
+                href="https://www.qbv-reader.com/">here</a> or join the QBVReader.
         </p>
-        <h4>1. No Cheating</h4>
-        <p>
-            Don't go and google answers. The whole point of the app is to practice and improve your quizbowl skills.
-        </p>
-        <h4>2. Unscheduled Updates</h4>
-        <p>
-            The app may be updated at any time without warning. Please be aware of this when using the app. You can
-            check periodically for updates on the changelog page or in the app's about message on Discord.
-        </p>
-        <h4>3. No Spamming</h4>
-        <p>
-            Do not spam the app with unnecessary commands or additional tossups. Generating the audio costs money,
-            so please be respectful of the app's resources.
-        </p>
+
+        <section id="installation" class="py-5">
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Click the button below.</li>
+                <li class="list-group-item">Login to Discord if prompted.</li>
+                <li class="list-group-item">Select the server you want to add the app to.</li>
+                <li class="list-group-item">Grant the necessary permissions and click "Authorize."</li>
+                <li class="list-group-item">You're all set! Just type !play to get started.</li>
+            </ol>
+            <a href="https://discord.com/oauth2/authorize?client_id=1278488120022532209&permissions=274918919232&integration_type=0&scope=bot"
+                style="background-color:#38b7ff" class="btn btn-lg px-5 py-3 center mt-5" target="_blank"
+                rel="noopener noreferrer">
+                Install
+            </a>
+        </section>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>© 2025 QBVReader. All rights reserved.</p>
     </footer>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
-</html>
+</body>
